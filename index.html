@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjadwalan Tugas - Website Untuk Siswa Melihat Jadwal Tugas</title>
+    <link rel="stylesheet" href="desain.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-brand">📝 Penjadwalan Tugas</div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-page="home">Beranda</a></li>
+                <li><a href="#" class="nav-link" data-page="tasks">Daftar Tugas</a></li>
+                <li><a href="#" class="nav-link" data-page="about">Tentang</a></li>
+            </ul>
+        </nav>
+
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <div class="hero">
+                <h1 class="hero-title">Jangan Lupa Tugas Sekolahmu!</h1>
+                <button class="cta-button" id="go-to-tasks">
+                    Mulai - Pergi ke Daftar Tugas
+                </button>
+            </div>
+        </div>
+
+        <!-- Task List Page -->
+        <div id="tasks-page" class="page">
+            <div class="task-container">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">
+                    Daftar Tugas Kamu
+                </h2>
+                
+                <div class="task-form">
+                    <input type="text" id="task-name" class="form-input" placeholder="Masukan Nama Tugas..." required>
+                    <input type="datetime-local" id="task-deadline" class="form-input" required>
+                    <button class="add-button" id="add-task-btn">Tambahkan Tugas</button>
+                </div>
+
+                <div id="task-list" class="task-list">
+                    <div class="empty-state" id="empty-state">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ac600b29-a119-4d8d-8e9e-e16e85208ab0.png" alt="Empty task list illustration" />
+                        <h3>Belum Ada Tugas Saat Ini!</h3>
+                        <p>Tambahkan tugas kamu menggunakan tombol "Tambahkan Tugas" di atas untuk memulai.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" class="page">
+            <div class="about-container">
+                <div class="about-header">
+                    <h2 class="about-title">Tentang Website Penjadwalan Tugas</h2>
+                    <p class="about-description">
+                        Website ini dibuat untuk membantu siswa mengelola jadwal tugas serta menjadi produk untuk bahan KTI.
+                    </p>
+                </div>
+
+                <div class="creator-profile">
+                    <div class="profile-image">DA</div>
+                    <h3 class="profile-name">Disereno Aristorahman</h3>
+                    <div class="profile-details">
+                        <p>Sekolah: SMA Plus PGRI Cibinong</p>
+                        <p>Kelas: XIR6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="aset.js"></script>
+</body>
+</html>
